@@ -1,25 +1,17 @@
+<?php include 'db.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav id="main-nav" class="navbar">
-        <img src="images/logo.png" alt="Root Reading Logo" class="nav-logo"> <!-- Add your logo here -->
-        <ul class="nav-list">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="teach.html" class="nav-link">What do we teach?</a></li>
-            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
+    <?php include 'includes/nav.php'; ?>
 
     <header>
         <h1>Contact</h1>
@@ -71,8 +63,8 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+
+    <!-- Footer -->
+    <?php include 'includes/footer.php'; ?>
 </body>
 </html>

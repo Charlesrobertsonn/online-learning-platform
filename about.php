@@ -1,26 +1,18 @@
+<?php include 'db.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Root Reading</title>
-    <link rel="stylesheet" href="css/home.css"> <!-- Main CSS file -->
-    <link rel="stylesheet" href="css/about.css"> <!-- Supporting CSS file -->
+    <link rel="stylesheet" href="assets/css/home.css"> <!-- Main CSS file -->
+    <link rel="stylesheet" href="assets/css/about.css"> <!-- Supporting CSS file -->
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav id="main-nav" class="navbar">
-        <img src="images/logo.png" alt="Root Reading Logo" class="nav-logo">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="teach/teach.html" class="nav-link">What do we teach?</a></li>
-            <li class="nav-item"><a href="services/services.html" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="testimonials/testimonials.html" class="nav-link">Testimonials</a></li>
-            <li class="nav-item"><a href="contact/contact.html" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
+    <?php include 'includes/nav.php'; ?>
 
     <!-- Main Content -->
     <header id="main-header" class="header">
@@ -65,13 +57,8 @@
         </section>
     </div>
 
-    <footer id="main-footer" class="footer">
-        <ul class="footer-list">
-            <li class="footer-item"><a href="actual-link-to-terms" class="footer-link">Terms of Service</a></li>
-            <li class="footer-item"><a href="actual-link-to-privacy" class="footer-link">Privacy Policy</a></li>
-            <li class="footer-item"><a href="actual-link-to-social-media" class="footer-link">Follow us on Social Media</a></li>
-        </ul>
-    </footer>
+    <!-- Footer -->
+    <?php include 'includes/footer.php'; ?>
 
 </body>
 </html>
