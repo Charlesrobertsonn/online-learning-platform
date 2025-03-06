@@ -1,17 +1,14 @@
 {
     "sqltools.connections": [
         {
-            "mysqlOptions": {
-                "authProtocol": "default",
-                "enableSsl": "Disabled"
-            },
             "previewLimit": 50,
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "online_learning",
+            "name": "program_specification",
             "username": "root",
-            "database": "online_learning"
+            "database": "program_specification"
         }
-    ]
+    ],
+    "breadcrumbs.enabled": false
 }

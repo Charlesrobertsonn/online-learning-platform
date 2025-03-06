@@ -1,14 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "root";  // Default XAMPP username
-$password = "";  // Leave blank for XAMPP
-$dbname = "online_learning";
+$host = 'localhost';                // XAMPP default
+$dbname = 'program_specification';   // Your new database
+$username = 'root';                  // XAMPP default user
+$password = '';                      // XAMPP default password (empty)
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
 }
 ?>
