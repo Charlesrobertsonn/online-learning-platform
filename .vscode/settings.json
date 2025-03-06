@@ -10,5 +10,6 @@
             "database": "program_specification"
         }
     ],
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "workbench.editor.titleScrollbarSizing": "default"
 }
